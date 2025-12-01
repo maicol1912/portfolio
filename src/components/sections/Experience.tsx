@@ -153,10 +153,10 @@ export function Experience() {
                       </div>
 
                       {/* Description */}
-                      <ul className={`space-y-2 mb-4 ${index % 2 === 0 ? 'lg:text-right' : ''}`}>
+                      <ul className="space-y-2 mb-4">
                         {exp.description.map((item, i) => (
                           <li key={i} className="text-muted text-sm flex items-start gap-2">
-                            <span className={`text-primary mt-1.5 ${index % 2 === 0 ? 'lg:order-2' : ''}`}>•</span>
+                            <span className="text-primary mt-1.5">•</span>
                             <span>{item}</span>
                           </li>
                         ))}
