@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion, useInView, type Variants } from 'framer-motion';
 import { useRef } from 'react';
+import { useTheme } from 'next-themes';
 import {
   SiTypescript, SiNodedotjs, SiNestjs, SiExpress, SiGraphql,
   SiPostgresql, SiMongodb, SiRedis, SiSnowflake,
@@ -19,7 +20,7 @@ const skillCategories = [
       { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
       { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
       { name: 'NestJS', icon: SiNestjs, color: '#E0234E' },
-      { name: 'Express', icon: SiExpress, color: '#000000' },
+      { name: 'Express', icon: SiExpress, color: '#000000', darkColor: '#FFFFFF' },
       { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
     ],
   },
@@ -50,7 +51,7 @@ const skillCategories = [
     skills: [
       { name: 'Angular', icon: SiAngular, color: '#DD0031' },
       { name: 'React', icon: SiReact, color: '#61DAFB' },
-      { name: 'Cypress', icon: SiCypress, color: '#17202C' },
+      { name: 'Cypress', icon: SiCypress, color: '#17202C', darkColor: '#69D3A7' },
     ],
   },
 ];
@@ -92,6 +93,8 @@ export function Skills() {
   const t = useTranslations('skills');
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
 
   return (
     <section id="skills" className="py-20 lg:py-32 bg-section-bg">
@@ -132,7 +135,7 @@ export function Skills() {
                     >
                       <skill.icon
                         className="w-5 h-5"
-                        style={{ color: skill.color }}
+                        style={{ color: isDark && skill.darkColor ? skill.darkColor : skill.color }}
                       />
                       <span className="text-sm font-medium text-foreground">
                         {skill.name}
