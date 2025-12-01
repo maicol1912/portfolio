@@ -6,6 +6,8 @@ import { useRef } from 'react';
 import { EnvelopeIcon, MapPinIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -148,7 +150,7 @@ export function Contact() {
                     {t('cta')}
                   </motion.a>
                   <motion.a
-                    href="/resume_maicol_arcila.pdf"
+                    href={`${basePath}/resume_maicol_arcila.pdf`}
                     download
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
