@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Maicol Arcila",
+    "titleHighlight": "Construyendo Soluciones",
+    "titleNormal": "Financieras Escalables",
+    "subtitle": "Ingeniero de Software especializado en desarrollo backend, arquitecturas event-driven y soluciones cloud-native para la industria fintech",
+    "cta": "Hablemos",
+    "ctaSecondary": "Ver Proyectos",
+    "available": "Disponible para trabajar"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "intro": "Transformando desafíos financieros complejos en soluciones de software elegantes",
+    "paragraph1": "Soy Ingeniero de Software con más de 4 años de experiencia construyendo soluciones robustas y escalables en el ecosistema de tecnología financiera. Mi viaje comenzó con una pasión por resolver problemas complejos a través del código, y ha evolucionado hacia una especialización en desarrollo backend, infraestructura cloud y arquitecturas orientadas a eventos.",
+    "paragraph2": "A lo largo de mi carrera, he tenido el privilegio de trabajar en sistemas financieros críticos que sirven a cientos de miles de usuarios diariamente. Desde migrar 500,000 créditos manteniendo la integridad de los datos, hasta optimizar plataformas bancarias core mejorando el rendimiento en un 60%, me motivan los desafíos que requieren tanto excelencia técnica como comprensión del negocio.",
+    "paragraph3": "Actualmente en Mundi, estoy orquestando workflows backend para productos de factoring y trade finance, trabajando con tecnologías de vanguardia como Temporal, Snowflake y patrones event-driven. Me apasiona el código limpio, los patrones arquitectónicos y construir sistemas que no solo funcionen hoy sino que escalen para el mañana."
+  },
+  "stats": {
+    "years": "Años de Experiencia",
+    "credits": "Créditos Migrados",
+    "performance": "Mejora en Rendimiento",
+    "stores": "Tiendas Servidas"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "present": "Presente",
+    "remote": "Remoto"
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "backend": "Backend",
+    "patterns": "Patrones y Mensajería",
+    "architecture": "Arquitectura",
+    "databases": "Bases de Datos",
+    "cloud": "Cloud y DevOps",
+    "frontend": "Frontend"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Desde sistemas financieros empresariales hasta proyectos open-source personales",
+    "workTab": "Proyectos Laborales",
+    "personalTab": "Proyectos Personales",
+    "viewGithub": "Ver en GitHub",
+    "viewAll": "Ver Todos los Proyectos",
+    "viewProject": "Ver Proyecto",
+    "technologies": "Tecnologías"
+  },
+  "services": {
+    "title": "Lo Que Hago",
+    "subtitle": "Servicios especializados para ayudarte a construir soluciones robustas y escalables"
+  },
+  "education": {
+    "title": "Educación y Certificaciones",
+    "educationTitle": "Educación",
+    "certificationsTitle": "Certificaciones"
+  },
+  "contact": {
+    "title": "Construyamos Algo Grandioso Juntos",
+    "subtitle": "Estoy disponible para proyectos freelance y oportunidades de tiempo completo. Ya sea que necesites sistemas backend escalables o arquitectura cloud, hablemos.",
+    "cta": "Contáctame",
+    "ctaSecondary": "Descargar CV",
+    "email": "Correo",
+    "location": "Ubicación",
+    "social": "Redes"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "builtWith": "Construido con Next.js, React y Tailwind CSS"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  }
+}

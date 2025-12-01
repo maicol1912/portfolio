@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Maicol Arcila",
+    "titleHighlight": "Building Scalable",
+    "titleNormal": "Financial Solutions",
+    "subtitle": "Software Engineer specialized in backend development, event-driven architectures, and cloud-native solutions for the fintech industry",
+    "cta": "Let's Talk",
+    "ctaSecondary": "View Projects",
+    "available": "Available for work"
+  },
+  "about": {
+    "title": "About Me",
+    "intro": "Transforming complex financial challenges into elegant software solutions",
+    "paragraph1": "I'm a Software Engineer with 4+ years of experience building robust, scalable solutions in the financial technology ecosystem. My journey started with a passion for solving complex problems through code, and has evolved into a specialization in backend development, cloud infrastructure, and event-driven architectures.",
+    "paragraph2": "Throughout my career, I've had the privilege of working on critical financial systems that serve hundreds of thousands of users daily. From migrating 500,000 credits while maintaining data integrity, to optimizing core banking platforms that improved performance by 60%, I thrive on challenges that require both technical excellence and business understanding.",
+    "paragraph3": "Currently at Mundi, I'm orchestrating backend workflows for trade finance and factoring products, working with cutting-edge technologies like Temporal, Snowflake, and event-driven patterns. I'm passionate about clean code, architectural patterns, and building systems that not only work today but scale for tomorrow."
+  },
+  "stats": {
+    "years": "Years Experience",
+    "credits": "Credits Migrated",
+    "performance": "Performance Boost",
+    "stores": "Stores Served"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "remote": "Remote"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "backend": "Backend",
+    "patterns": "Patterns & Messaging",
+    "architecture": "Architecture",
+    "databases": "Databases",
+    "cloud": "Cloud & DevOps",
+    "frontend": "Frontend"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "From enterprise financial systems to personal open-source projects",
+    "workTab": "Work Projects",
+    "personalTab": "Personal Projects",
+    "viewGithub": "View on GitHub",
+    "viewAll": "View All Projects",
+    "viewProject": "View Project",
+    "technologies": "Technologies"
+  },
+  "services": {
+    "title": "What I Do",
+    "subtitle": "Specialized services to help you build robust and scalable solutions"
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "educationTitle": "Education",
+    "certificationsTitle": "Certifications"
+  },
+  "contact": {
+    "title": "Let's Build Something Great Together",
+    "subtitle": "I'm available for freelance projects and full-time opportunities. Whether you need scalable backend systems or cloud architecture, let's talk.",
+    "cta": "Get In Touch",
+    "ctaSecondary": "Download Resume",
+    "email": "Email",
+    "location": "Location",
+    "social": "Social"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "builtWith": "Built with Next.js, React & Tailwind CSS"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}
