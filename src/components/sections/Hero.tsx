@@ -4,7 +4,8 @@ import { useTranslations } from 'next-intl';
 import { motion, type Variants } from 'framer-motion';
 import { ArrowDownIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import Image from 'next/image';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -162,13 +163,12 @@ export function Hero() {
                 <div className="relative w-80 h-80 mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full opacity-20 blur-2xl" />
                   <div className="relative w-full h-full rounded-full bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
-                    <Image
-                      src="/images/maicol-profile.png"
+                    <img
+                      src={`${basePath}/images/maicol-profile.png`}
                       alt="Maicol Arcila"
                       width={320}
                       height={320}
                       className="object-cover object-top scale-110"
-                      priority
                     />
                   </div>
 
