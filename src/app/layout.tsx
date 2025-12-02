@@ -14,12 +14,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const metadata: Metadata = {
   title: "Maicol Arcila | Software Engineer - Backend & Cloud Specialist",
   description: "Software Engineer with 4+ years building scalable fintech systems. Specialized in Node.js, NestJS, AWS, microservices, and event-driven architectures.",
   keywords: "software engineer, backend developer, nodejs, nestjs, aws, fintech, microservices, colombia, medellin",
   authors: [{ name: "Maicol Arcila" }],
   creator: "Maicol Arcila",
+  icons: {
+    icon: [
+      { url: `${basePath}/favicon-16x16.png`, sizes: '16x16', type: 'image/png' },
+      { url: `${basePath}/favicon-32x32.png`, sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: `${basePath}/apple-touch-icon.png`, sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: `${basePath}/site.webmanifest`,
   openGraph: {
     type: "website",
     locale: "en_US",
