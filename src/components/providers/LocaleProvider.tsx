@@ -12,16 +12,17 @@ interface LocaleContextType {
   setLocale: (locale: Locale) => void;
 }
 
-const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
-
 const messages = { en, es };
 
+const defaultContextValue: LocaleContextType = {
+  locale: 'en',
+  setLocale: () => {},
+};
+
+const LocaleContext = createContext<LocaleContextType>(defaultContextValue);
+
 export function useLocale() {
-  const context = useContext(LocaleContext);
-  if (!context) {
-    throw new Error('useLocale must be used within a LocaleProvider');
-  }
-  return context;
+  return useContext(LocaleContext);
 }
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
@@ -41,16 +42,12 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     setLocaleState(newLocale);
   };
 
-  if (!mounted) {
-    return (
-      <NextIntlClientProvider locale="en" messages={messages.en}>
-        {children}
-      </NextIntlClientProvider>
-    );
-  }
+  const contextValue: LocaleContextType = mounted
+    ? { locale, setLocale }
+    : defaultContextValue;
 
   return (
-    <LocaleContext.Provider value={{ locale, setLocale }}>
+    <LocaleContext.Provider value={contextValue}>
       <NextIntlClientProvider locale={locale} messages={messages[locale]}>
         {children}
       </NextIntlClientProvider>
