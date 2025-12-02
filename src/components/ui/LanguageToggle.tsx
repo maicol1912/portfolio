@@ -1,28 +1,17 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useLocale } from '@/components/providers/LocaleProvider';
 
 export function LanguageToggle() {
-  const router = useRouter();
-  const [locale, setLocale] = useState('en');
+  const { locale, setLocale } = useLocale();
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const storedLocale = document.cookie
-      .split('; ')
-      .find(row => row.startsWith('locale='))
-      ?.split('=')[1] || 'en';
-    setLocale(storedLocale);
-  }, []);
-
-  const changeLocale = (newLocale: string) => {
-    document.cookie = `locale=${newLocale};path=/;max-age=31536000`;
+  const changeLocale = (newLocale: 'en' | 'es') => {
     setLocale(newLocale);
     setIsOpen(false);
-    router.refresh();
   };
 
   return (
